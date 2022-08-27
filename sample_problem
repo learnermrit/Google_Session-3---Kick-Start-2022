@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+ int t;
+ cin>>t;
+ int j=1;
+ while(t--){
+   
+   int sz=0,ch=0;
+   int sum=0;
+   cin>>sz>>ch;
+   int arr[sz];
+   for(int i=0;i<sz;i++){
+    cin>>arr[i];
+    sum+=arr[i];
+   }
+   cout<<"Case #"<<(j++)<<": "<<(sum%ch)<<endl;
+   
+ }
+ return 0;
+}
